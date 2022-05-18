@@ -1,0 +1,760 @@
+/* ROOT DE COLORES ENCRIPTADOR */
+:root {
+    --light-blue-100: hsla(227, 60%, 97%, 1);
+    --dark-blue-300: hsl(215, 75%, 25%);
+    --white: hsla(0, 0%, 100%, 1);
+    --gray-500: hsla(210, 10%, 23%, 1);
+    --decoder-btn: hsla(214, 26%, 88%, 1);
+    --gray-400: hsla(210, 9%, 31%, 1);
+}
+
+/* reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',
+        sans-serif;
+    font-family: 'Kanit',
+        sans-serif;
+    font-family: 'Ubuntu',
+        sans-serif;
+}
+
+.fondo {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.index-fondo {
+    background-image: url(../img/work-play.jpg);
+}
+
+/* ADIVINADOR */
+.adivinador-fondo {
+    background-image: url("../img/adivinador/fondoAdivinador.jpg");
+}
+
+/* MEMOTEST */
+.memotest-fondo {
+    background-image: url("../img/memotest/fondoTexturaGris.jpg");
+}
+
+/* ENCRIPTADOR */
+
+.encriptador-fondo {
+    background-image: url("../img/encriptador/encriptador-fondo.jpg");
+}
+
+/* RANKING */
+.ranking-fondo {
+    background-image: url("../img/ranking/fondoRanking.jpg");
+}
+
+/* HEADER Y NAV */
+.header {
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-texto {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* INDEX */
+
+.index-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #cccccc;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card-index {
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 350px;
+    background-color: #f7f5f7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    margin: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.card-index__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0c0c0c;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card-index__img {
+    position: absolute;
+    top: 50px;
+    width: 150px;
+    height: 150px;
+    align-self: center;
+}
+
+.card-index__p {
+    position: absolute;
+    top: 58%;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #070707;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn-jugar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #0c0c0c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.btn-jugar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+
+/* ADIVINADOR */
+
+.adivinador-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.adivinador {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 12% 0;
+}
+
+.btn-inicioAdivinador {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    background-color: #b30ce6;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+.adivinador-input {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 12% 0;
+    display: none;
+    transition: all 0.
+}
+
+.adivinadorNumber-input {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #a217de;
+    resize: none;
+    outline: none;
+    background-color: #f7f5f7;
+    padding: 10px;
+}
+
+.adivinador-input p {
+    position: relative;
+    font-size: 1.5rem;
+    color: #fff;
+    bottom: 9rem;
+    padding: 1rem;
+}
+
+
+.adivinador-resultado {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 12% 0;
+    display: none;
+    transition: all 0.5s;
+}
+
+.resultado-Adivinador p {
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.show {
+    display: flex;
+}
+
+/* MEMOTEST */
+
+.memotest-main,
+.puntuacion-memotest {
+    text-align: center;
+    color: #fff;
+}
+
+.grilla-memotest {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 700px;
+    height: 450px;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.grilla-memotest img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+.puntuacion-memotest {
+    margin: 20px;
+    padding: 20px;
+}
+
+.puntuacion-memotest h3 span {
+    margin: 5px;
+    color: rgb(201, 186, 242);
+}
+
+/* ENCRIPTADOR */
+.encriptador-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.encriptador-title {
+    font-family: 'Ubuntu',
+        sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #cccccc;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.text-inputUsuarioEncrip {
+    width: 60%;
+    padding: 16px;
+    height: 500px;
+    margin: 0 auto;
+    border: none;
+    resize: none;
+}
+
+.text-inputUsuarioEncrip,
+.text-inputUsuarioEncrip::placeholder {
+    color: var(--dark-blue-300);
+}
+
+.text-advertenciaEncrip {
+    color: #f7f5f7;
+    font-size: 16px;
+}
+
+.btn {
+    border-radius: 10px;
+    font-size: 24px;
+    width: 300px;
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid var(--dark-blue-300);
+
+}
+
+.btn-encriptar {
+    background-color: var(--dark-blue-300);
+    color: var(--light-blue-100)
+}
+
+.btn-desencriptar {
+    background-color: var(--decoder-btn);
+    border: 1px solid var(--dark-blue-300);
+    color: var(--dark-blue-300);
+}
+
+.text-output-sectionEncrip {
+    position: absolute;
+    background-color: #fff;
+    width: 30%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    top: 60px;
+    right: 60px;
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 50%);
+}
+
+
+.text-outputUsuarioEncrip {
+    width: 100%;
+    height: 500px;
+    padding: 16px;
+    background-color: #fff;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+.mostrarMensajeVacioEncrip {
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    width: 90%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.mostrarMensajeVacioEncrip h3,
+p {
+    color: var(--dark-blue-300);
+    font-size: 24px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.mostrarMensajeVacioEncrip h3 {
+    font-weight: 700;
+}
+
+.ilustracionEncrip {
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+}
+
+
+.ocultarMensajeVacioEncrip {
+    display: none;
+}
+
+.ocultarBtnCopiarEncrip {
+    display: none;
+    background: transparent;
+    color: var(--dark-blue-300);
+    border: 1px solid var(--dark-blue-300);
+    margin: 15px auto;
+}
+
+.text-footerEncrip {
+    height: 50px;
+    display: flex;
+    bottom: 0;
+    font-size: 16px;
+    color: var(--dark-blue-300);
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.text-footerEncrip a {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--dark-blue-300);
+}
+
+/* RANKING */
+
+.ranking-fondo {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0c0c0c;
+
+}
+
+.header__title-ranking {
+    font-family: 'Inter',
+        sans-serif;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+.ranking {
+    font-family: 'Inter',
+        sans-serif;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    width: 95%;
+    height: 60px;
+    background: transparent;
+    padding: 20px;
+    font-size: 1rem;
+    color: #fff;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+}
+
+footer p,
+a {
+    font-size: 1rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .fondo {
+        height: 100%;
+    }
+
+    /* adivinador */
+    .fondoAdivinador {
+        height: 100vh;
+    }
+
+    .btn-inicioAdivinador {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        font-size: 1.5rem;
+    }
+
+    .adivinadorNumber-input {
+        width: 150px;
+        height: 150px;
+        font-size: 3rem;
+    }
+
+    .adivinador-input p {
+        font-size: 1rem;
+        bottom: 5rem;
+        padding: 1rem;
+        margin-bottom: 50px;
+    }
+
+    .resultado-Adivinador p {
+        font-size: 1rem;
+
+    }
+
+    /* memotest */
+    .memotest-main {
+        height: 100%;
+    }
+
+    .grilla-memotest {
+        width: 100%;
+        position: relative;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .footer-memotest {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        align-content: flex-end;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        position: absolute;
+        bottom: unset;
+    }
+
+    /* encriptador */
+    .encriptador-fondo {
+        height: 100vh;
+    }
+
+    .encriptador-main {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .encriptador-title {
+        font-size: 1.5rem;
+    }
+
+    .text-inputUsuarioEncrip {
+        width: 100%;
+        height: 250px;
+    }
+
+    .btn {
+        display: flex;
+        font-size: 1.2rem;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .btn-encriptar {
+        background-color: var(--dark-blue-300);
+        color: var(--light-blue-100)
+    }
+
+    .btn-desencriptar {
+        background-color: var(--decoder-btn);
+        border: 1px solid var(--dark-blue-300);
+        color: var(--dark-blue-300);
+    }
+
+    .ilustracionEncrip {
+        display: none;
+    }
+
+    .text-output-sectionEncrip {
+        position: relative;
+        width: 100%;
+        height: 275px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        top: 0;
+        right: 0;
+        margin: 5px auto;
+        flex-wrap: nowrap;
+    }
+
+
+    .text-outputUsuarioEncrip {
+        width: 100%;
+        height: 500px;
+        padding: 16px;
+        background-color: #fff;
+        resize: none;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+    }
+
+    .mostrarMensajeVacioEncrip {
+        position: relative;
+        display: flex;
+        background-color: #fff;
+        width: 90%;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 15% auto 0 auto;
+
+    }
+
+    .ocultarBtnCopiarEncrip {
+        margin: 0px auto;
+        position: absolute;
+        bottom: 2px;
+        width: 99%;
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+
+    /* encriptador */
+    .encriptador-fondo {
+        height: 100vh;
+    }
+
+    .encriptador-main {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .encriptador-title {
+        font-size: 1.5rem;
+    }
+
+    .text-inputUsuarioEncrip {
+        width: 100%;
+        height: 250px;
+    }
+
+    .btn {
+        display: flex;
+        font-size: 1.2rem;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+    .btn-encriptar {
+        background-color: var(--dark-blue-300);
+        color: var(--light-blue-100)
+    }
+
+    .btn-desencriptar {
+        background-color: var(--decoder-btn);
+        border: 1px solid var(--dark-blue-300);
+        color: var(--dark-blue-300);
+    }
+
+    .ilustracionEncrip {
+        display: none;
+    }
+
+    .text-output-sectionEncrip {
+        position: relative;
+        width: 100%;
+        height: 275px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        top: 0;
+        right: 0;
+        margin: 5px auto;
+        flex-wrap: nowrap;
+    }
+
+    .text-outputUsuarioEncrip {
+        width: 100%;
+        height: 500px;
+        padding: 16px;
+        background-color: #fff;
+        resize: none;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+    }
+
+    .mostrarMensajeVacioEncrip {
+        position: relative;
+        display: flex;
+        background-color: #fff;
+        width: 90%;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 15% auto 0 auto;
+    }
+
+    .ocultarBtnCopiarEncrip {
+        margin: 0px auto;
+        position: absolute;
+        bottom: 2px;
+        width: 99%;
+        display: none;
+    }
+}
